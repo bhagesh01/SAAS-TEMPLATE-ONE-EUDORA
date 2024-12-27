@@ -1,6 +1,4 @@
 "use client"
-import appScreen from "../assets/images/product.avif";
-import Image from 'next/image';
 import {motion , useScroll, useTransform} from 'framer-motion';
 import { useEffect, useRef } from "react";
 export const  ProductShowcase = () => {
@@ -30,7 +28,7 @@ const opacity = useTransform(scrollYProgress, [0, 1], [.3,1]);
 
         }}
         >
-        <Image src={appScreen}  ref={appImage} alt="app screen" className="mt-14" />
+        <img src={"./product-showcase.webp"}  ref={appImage} alt="app screen" className="mt-14" />
         </motion.div>
         </div>
 
